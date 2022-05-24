@@ -1,0 +1,118 @@
+.container {
+  margin: 20vh auto 5vh auto;
+  text-align: center;
+  width: 60%;
+}
+
+header  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  padding-bottom: 10px;
+  border: 1px solid #ddd;
+  margin: 0;
+  top: 0;
+  position: fixed;
+  background-color: lightgrey;
+}
+
+header .text {
+  padding: 5px;
+  margin-left: 15px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+header ul li {
+  list-style: none;
+  margin-right: 15px;
+  padding: 3px;
+}
+
+header ul li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+#title,
+#author {
+  width: 400px;
+
+  height: 28px;
+  outline: none;
+}
+
+#form input::placeholder {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+#form input:hover {
+  outline: none;
+
+}
+
+#submit {
+  width: 100px;
+  height: 50px;
+  align-self: center;
+  margin-left: 38%;
+}
+
+#display-books {
+  margin-top: 25%;
+  height: 100vh;
+  padding-top: 25vh;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 50%;
+  margin: 5vh auto 5vh auto;
+   padding: 15px 5px 5px 5px;
+   background-color: aqua;
+   color: white;
+}
+
+
+#contact {
+  margin-top: 25%;
+  height: 90vh;
+  padding-top: 25vh;
+}
+
+.contact-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 15vh;
+  justify-content: center;
+  padding-top: 5vh;
+}
+
+.contact-ul li {
+  margin-left: 30%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ddd;
+  padding: 2%;
+}
