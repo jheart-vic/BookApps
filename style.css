@@ -147,6 +147,7 @@ footer {
   justify-content: center;
   border: 1px solid #ddd;
   padding: 2%;
+  margin-top: 20vh;
 }
 
 .hidden {

@@ -3,7 +3,7 @@ const allBooks = document.querySelector('.allBooks');
 const addBook = document.querySelector('.addBook');
 const contact = document.querySelector('.contact');
 const show = document.querySelector('.show');
-const display = document.querySelector('.display-tex');
+const display = document.querySelector('.display-text');
 
 navList.addEventListener('click', () => {
   addBook.classList.add('hidden');
