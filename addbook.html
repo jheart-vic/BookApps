@@ -11,12 +11,16 @@
   <header>
     <h3 class="text">Awesome <span class="span">Books</span></h3>
     <ul>
-      <li><a href="#display-books"> My lists</a></li>
-      <li class="line"><a href="#form"> Add New</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li class="list-items"><a href="#display-books"> My lists</a></li>
+      <li class="line list-items"><a href="#form"> Add New</a></li>
+      <li class="list-items"><a href="#contact">Contact</a></li>
     </ul>
   </header>
-  <div class="container">
+  <div class="allBooks">
+    <h2 class="titleListBooks">All awesome books</h2>
+    <div class="list-books"></div>
+</div>
+  <div class="container addBook hidden">
     <h2 class="text">Add New Books</h2>
     <form  id="form">
         <input type="text" id="title" placeholder="Title">
@@ -25,11 +29,12 @@
 
        <input type="submit"  id="submit" value="Add Book">
     </form>
+  </div>
     <h3 class="display-text">All Awesome <span class="span">Books</span></h3>
   <section id="display-books">
     
   </section>
-  <section id="contact">
+  <section id="contact" class="contact">
    <h3>Contact Information</h3>
    <p>Do you want to contact us or you just want to say Hi?</p>
    <ul class="contact-ul">
@@ -38,7 +43,7 @@
      <li>Our address: 19 Ofoelo street Lagos Nigeria</li>
    </ul>
   </section>
-</div>
+
 <footer>
   @copy  2022 production
 </footer>
