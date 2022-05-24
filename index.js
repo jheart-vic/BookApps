@@ -6,11 +6,11 @@ const show = document.querySelector('.show');
 const display = document.querySelector('.display-tex');
 
 navList.addEventListener('click', () => {
+  addBook.classList.add('hidden');
+  contact.classList.add('hidden');
   allBooks.classList.remove('hidden');
   show.classList.remove('hidden');
   display.classList.remove('hidden');
-  addBook.classList.add('hidden');
-  contact.classList.add('hidden');
 });
 
 navAdd.addEventListener('click', () => {

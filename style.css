@@ -90,9 +90,9 @@ header ul li a {
 }
 
 .display-text {
-  margin-top: 25vh;
   color: #000;
   text-align: center;
+  padding-top: 4vh;
 }
 
 .contact-text,
