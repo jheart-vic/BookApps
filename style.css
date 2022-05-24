@@ -18,6 +18,11 @@ header  {
   background-color: lightgrey;
 }
 
+.line {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
 header .text {
   padding: 5px;
   margin-left: 15px;
@@ -38,13 +43,14 @@ header ul li {
 header ul li a {
   text-decoration: none;
   cursor: pointer;
+  color: black;
 }
 
 #form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  justify-content: center;
+  padding-top: 20px;
   align-items: center;
   height: 90vh;
 }
@@ -75,8 +81,9 @@ header ul li a {
 
 #display-books {
   margin-top: 25%;
-  height: 100vh;
-  padding-top: 25vh;
+  height: 30vh;
+  padding-top: 15vh;
+  border: 2px solid black;
 }
 
 .display {
@@ -84,12 +91,19 @@ header ul li a {
   justify-content: space-between;
   align-items: baseline;
   width: 50%;
-  margin: 5vh auto 5vh auto;
+  margin: 0 auto 5vh auto;
    padding: 15px 5px 5px 5px;
-   background-color: aqua;
-   color: white;
+   color: black;
+   
 }
 
+.display:nth-child(odd) {
+  background-color: #fff;
+}
+
+.display:nth-child(even) {
+  background-color: lightgrey;
+}
 
 #contact {
   margin-top: 25%;
