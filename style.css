@@ -4,7 +4,7 @@
   width: 60%;
 }
 
-header  {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -54,10 +54,10 @@ header ul li a {
   align-items: center;
   height: 90vh;
 }
+
 #title,
 #author {
   width: 400px;
-
   height: 28px;
   outline: none;
 }
@@ -69,7 +69,6 @@ header ul li a {
 
 #form input:hover {
   outline: none;
-
 }
 
 #submit {
@@ -80,29 +79,32 @@ header ul li a {
 }
 
 #display-books {
-  margin-top: 25%;
-  height: 30vh;
-  padding-top: 15vh;
+  margin-top: 5%;
+  padding: 25vh 15vh 15vh 15vh;
   border: 2px solid black;
+}
+
+.display-text {
+  margin-top: 25vh;
+  color: #000;
 }
 
 .display {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  width: 50%;
-  margin: 0 auto 5vh auto;
-   padding: 15px 5px 5px 5px;
-   color: black;
-   
+  width: 70%;
+  margin: 0 auto;
+  padding: 5px 5px 5px 5px;
+  color: black;
 }
 
 .display:nth-child(odd) {
-  background-color: #fff;
+  background-color: lightgrey;
 }
 
 .display:nth-child(even) {
-  background-color: lightgrey;
+  background-color: #fff;
 }
 
 #contact {

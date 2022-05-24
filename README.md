@@ -11,7 +11,7 @@ Awesome books using HTML, CSS, and JavaScripts
 
 ## Live Demo
 
-[Live Demo Link](https://hanningtonem.github.io/Awesome-books/)
+[Live Demo Link]( https://jheart-vic.github.io/BookApps/)
 
 ## Getting Started
 

@@ -1,38 +1,8 @@
+/* eslint-disable  max-classes-per-file */
 class Book {
   constructor(title, author) {
-    (this.title = title), (this.author = author);
-  }
-}
-
-// the User Interface class
-let books;
-class UserInterFace {
-  static showBooks() {
-    books = StoredBooks.getBook(books);
-    books.forEach((book) => {
-      UserInterFace.showBookList(book);
-    });
-  }
-
-  static showBookList(book) {
-    const display = document.getElementById('display-books');
-    const wrapper = document.createElement('div');
-    wrapper.className = 'display';
-    wrapper.innerHTML = `<p>${book.title} by ${book.author}</p>
-  <button type='button' class='btn'>Remove</button>`;
-
-    display.appendChild(wrapper);
-  }
-
-  static clearInput() {
-    document.getElementById('author').value = '';
-    document.getElementById('title').value = '';
-  }
-
-  static deleteBook(del) {
-    if (del.classList.contains('btn')) {
-      del.parentElement.remove();
-    }
+    this.title = title;
+    this.author = author;
   }
 }
 
@@ -64,6 +34,39 @@ class StoredBooks {
       }
     });
     localStorage.setItem('books', JSON.stringify(books));
+  }
+}
+
+// the User Interface class
+
+let books;
+class UserInterFace {
+  static showBooks() {
+    books = StoredBooks.getBook(books);
+    books.forEach((book) => {
+      UserInterFace.showBookList(book);
+    });
+  }
+
+  static showBookList(book) {
+    const display = document.getElementById('display-books');
+    const wrapper = document.createElement('div');
+    wrapper.className = 'display';
+    wrapper.innerHTML = `<p>${book.title} by ${book.author}</p>
+  <button type='button' class='btn'>Remove</button>`;
+
+    display.appendChild(wrapper);
+  }
+
+  static clearInput() {
+    document.getElementById('author').value = '';
+    document.getElementById('title').value = '';
+  }
+
+  static deleteBook(del) {
+    if (del.classList.contains('btn')) {
+      del.parentElement.remove();
+    }
   }
 }
 
