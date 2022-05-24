@@ -39,7 +39,34 @@ class UserInterFace {
 
 // call the books
 // document.addEventListener('load', UserInterFace.showBooks);
-
+class StoredBooks {
+    static getBook() {
+      let books;
+      if (localStorage.getItem("books") === null) {
+        books = [];
+      } else {
+        books = JSON.parse(localStorage.getItem("books"));
+      }
+      return books;
+    }
+  
+    static addBook(book) {
+      let books = StoredBooks.getBook();
+      books.push(book);
+      localStorage.setItem("books", JSON.stringify(books));
+    }
+  
+    static removeBook(title) {
+      const books = StoredBooks.getBook();
+      const modifiedTitle = title.split(' by')[0];
+      books.forEach((book, i) => {
+        if (book.title === modifiedTitle) {
+          books.splice(i, 1);
+        }
+      });
+      localStorage.setItem("books", JSON.stringify(books));
+    }
+  }
 
 document.querySelector("#form").addEventListener("submit", (e) => {
   e.preventDefault();
