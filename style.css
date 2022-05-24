@@ -1,7 +1,9 @@
 .container {
-  margin: 20vh auto 5vh auto;
+  margin: 20vh auto 0 auto;
   text-align: center;
-  width: 60%;
+  width: 100%;
+  padding-top: 40px;
+  height: 100vh;
 }
 
 header {
@@ -50,7 +52,7 @@ header ul li a {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-top: 20px;
+  padding-top: 20vh;
   align-items: center;
   height: 90vh;
 }
@@ -71,7 +73,7 @@ header ul li a {
   outline: none;
 }
 
-#submit {
+#btn {
   width: 100px;
   height: 50px;
   align-self: center;
@@ -82,11 +84,24 @@ header ul li a {
   margin-top: 5%;
   padding: 25vh 15vh 15vh 15vh;
   border: 2px solid black;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .display-text {
   margin-top: 25vh;
   color: #000;
+  text-align: center;
+}
+
+.contact-text,
+.p-text {
+  text-align: center;
+}
+
+.p-text {
+  margin-left: 50px;
 }
 
 .display {
@@ -94,7 +109,7 @@ header ul li a {
   justify-content: space-between;
   align-items: baseline;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 5vh auto;
   padding: 5px 5px 5px 5px;
   color: black;
 }
@@ -111,19 +126,20 @@ header ul li a {
   margin-top: 25%;
   height: 90vh;
   padding-top: 25vh;
+  text-align: center;
 }
 
 .contact-ul {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  margin-top: 15vh;
   justify-content: center;
-  padding-top: 5vh;
+  align-items: baseline;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contact-ul li {
-  margin-left: 30%;
+  margin-left: 40%;
 }
 
 footer {
@@ -131,4 +147,8 @@ footer {
   justify-content: center;
   border: 1px solid #ddd;
   padding: 2%;
+}
+
+.hidden {
+  display: none;
 }
